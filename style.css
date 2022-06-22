@@ -1,0 +1,98 @@
+:root {
+    --black: #111121;
+    --grey: #a6a6a6;
+    --darkgrey: #585859;
+    --darkteal: #a9ded4;
+    --teal: #a9ded4;
+    --white: #f7f8fa;
+    --brightred: #d92525;
+    --darkred: #591c21;
+    --red: #8c1f28;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --sun: #e6d3b4;
+    --font-size: 1.3rem;
+    --mono: "Fira Mono", monospace;
+    --sans: "Fira Sans", sans-serif;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--sans);
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+}
+
+.night {
+    color: var(--white);
+    background-color: var(--black); 
+}
+
+.day {
+    color: var(--black);
+    background-color: var(--sun); 
+}
+
+.night-moon {
+    box-shadow: 
+    0 0 60px 3px var(--hotmag),
+    0 0 100px 6px var(--aqua);
+}
+
+.day-sun {
+    box-shadow: 
+    0 0 60px 3px var(--black),
+    0 0 100px 6px var(--dkblue);
+}
+
+.app {
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 10%;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    width: 75vw;
+    height: 75vh;
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    flex-flow: column;
+}
+
+
+#time {
+    font-size: 100px;
+    filter: glow;
+    text-shadow: 
+    0 0 1px var(--white),
+    0 0 2px var(--aqua)
+    ;
+}
+
+
