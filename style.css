@@ -33,7 +33,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    transition: 2s;
+    transition: 2s ease-in-out;
 }
 
 .night {
